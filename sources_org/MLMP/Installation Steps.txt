@@ -1,0 +1,20 @@
+Step 1 - Download the script from your account and then extract it into the folder.
+
+Step 2 - Upload the "User" folder via ftp to your server.
+
+Step 3 - Update Mysql or backend server information in both /admin and /user folder in file called "z_db.php" and under /backups folder, file named as backup.php
+
+Step 4 - Import "Install Me.sql" file through phpmyadmin after creating the database.
+
+Step 5 - Login into Admin Account and apply various General settings, use tutorials to do so.
+
+Step 6 - Login into Paypal.com and  perform various settings. (Most Important Step, use video tutorials)
+
+Step 7 - Login back to admin panel and create packages. (use video tutorials)
+
+And You Are Done To Launch :)
+Dont forget to rate us 5 star :D
+
+**Updated 6 June 2015**
+
+ 

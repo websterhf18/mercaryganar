@@ -1,0 +1,399 @@
+Version 2.8.8.1 (Beta) (To be published)
+-----------------------------------
+
+	**Database Structure**
+	- Database structure has been updated and optimized,please update sql first, otherwise you will be flooded with the errors.
+
+	**Bug Fixes**
+	- Some known bug Fixes And Improvement
+	- Some performance updates
+	- Now there would not be diffrent payment gateways for diffrent packages. Central payment gateway settings will work for all packages.
+
+	**New Feature**
+	- Now user can pay on registration page via
+		a) Paypal
+		b) Payza
+		c) Solid Trust Pay
+		d) Cash on delivery
+	
+	- Users can now pay with above methods during renewal of their account
+	- Payment Gateway Settings can be updated on setting page in admin
+	- Script now faster
+	- now with google translator
+	- now suport maximum languages
+	- now support HTTPS connection
+	- address is now optional field during registration
+	
+
+	Run user/updatesql.php in server before updating the files.
+
+	Please report any gateway related error if any.
+
+-----------------------------------
+Version 2.5.2.0 (Beta) 1st September 2015
+
+	**Bug Fixes**
+	- Some known bug Fixes And Improvement
+
+	**New Feature**
+	- Donline View Update To Level 10
+	
+	**File Update**
+	1) User/downline.php
+
+-----------------------------------
+
+Version 2.5.1.0 (Beta) 28th August 2015
+	**Bug Fixes**
+	- Some bug Fixes And Improvement
+	
+	**New Feature**
+	- Now You can create package with decimal price, bonuses, referral amounts. Like $1.99 or $0.09
+	- Run file : User/updatesql.php in browser to update the changes in backend for decimal feature.
+
+	**File Update**
+	1) User/dashboard.php
+	2) User/updatesql.php
+	3) User/admin/createpac.php
+	4) USer/admin/pacsettings.php
+
+
+------------------------------------
+Version 2.5.0.3 (Stable) | 30 June 2015
+
+	**Bug Fixes**
+	- Fixed background all screen resolutions (previously it was repeating)
+	- Fixed Session warning on signup page, headers only sent was coming.
+	- Added File renewgatewayck.php file, it was missing in previous version
+	- Changed Color of text on index,signup and some another pages at footer
+	- Fixed a single warning for some users on dashboard page
+	- Added downline view suport till level 8 now
+	- Tweaked Profile Page, now user will see his bank details in his profile page
+	- Fixed one bug on user's downline page (Credit goes to purchaser - farliscom)
+	- Updated file Affiliate_Link_On_Index_Page.txt
+
+	**File Update**
+	1) User/downline.php
+	2) User/dashboard.php
+	3) User/forgotpassword.php
+	4) User/signup.php
+	5) User/index.php
+	5) User/profile.php
+	6) Admin/profile.php
+	7) Admin/profileupdate.php
+	8) User/renewaccount.php
+	9) Admin/index.php
+
+	**File Added**
+	1) User/renewgatewayck.php
+	
+
+------------------------------------
+Version 2.5.0.2 (Stable) | 20 June 2015
+
+	**Bug Fixes**
+	- Fixed Wrong delete user URL
+	- Rename SQL file name to Install Me.sql, previosly it was creating confusion.
+
+	**File Update**
+	1) Admin/users.php
+
+------------------------------------
+Version 2.5.0.1 (Stable) | 14 June 2015
+
+	**Bug Fixes**
+	-Fixed Wrong Paypal URL
+
+	**File Update**
+	1) User/thankyou.php
+
+====================================
+------------------------------------
+Version 2.5.0.0 (Stable) | 12 June 2015
+----------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+****This upgrade would bring whole New experience For Registered Members, New Look-New Feel, Admin Theme Upgrade would be done in next update****
+****Members upgradation is first priority for us between admin/member, thats why we upraded the members area first****
+**** Put your members' login and signup on maintenance during the updation of the script(settings given in admin settings), for flowless update**** 
+----------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------       
+
+	**Database Structure**
+	- Database structure has been updated and optimized,please update sql first, otherwise you will be flooded with the errors.
+
+	 **Files Deleted**
+	 Delete below files, they are of no use, Do it before they can be misused by other person, we have made this script more relaible
+	 01) User/loginproc.php
+	 02) User/signupck.php
+	 03) User/forgotpasswordck.php
+	 04) User/sendmail.php
+	 05) User/payrequest.com
+	 06) User/profileupdateuser.php
+	
+
+	**Bug Fixes**
+	- Fixed Bug while requesting payment by user. (headers already sent warning was shown)
+	- Fixed Wrong Country Shown On Admin Dashboard Page.
+	- Fixed Wrong Name Sent in E-Mails (like localhost or your server name) During Signup, Now no-reply@yourwebsite.com will be used to send emails
+	- Fixed Wrong Name Sent in E-Mail During Password Request, Now No-Reply@yourwebsite.com will be used to send emails
+	- Some Security Patches On Forgot Password Page
+	- Some Security Patches On Login Page
+	- Xss Attacks Fixed On Two Pages
+	- Fixed Invoice Print Alignment
+	- Fixed Small Warning while adding bonus and referral money to their accounts
+	- Removed irrelevent data printing on page while upgrading the user's account
+	- Fixed wrong data on user's downline page in Level 5 (Credit Goes To purchaser - Bradesko :D )
+	- Fixed wrong data on user's downline page in Level 6 (Credit Goes To purchaser - Bradesko :D )
+	- Fixed Some bug/warnings On page during uprgading the user. (faced by some of members)
+	- Overall Mailing System Improved 
+	- Fixed Bug On Signup Page (Wrong href link was given)
+	- Fixed Warning on forgot password page on some servers 
+	- More Validations On Login Page
+	- More Validations On Signup Page
+	- More Validations On Forgot Password Page
+	- More Validations On Profile Page
+	- Some Internal CSS tweaks, for better responsive on tabs and phones
+	- Fixed SQL Error on Signup page, when no package is created, faced by some users.
+	- Removed Irrelevent Data On Invoice Page In Left Menu.
+	- Fixed Warning On Contact Page In Member Area
+	- Fixed Wrong Mail Routing On Contact Page In Member Area
+	- Performance Updates On Dashboard Page Of Member
+	- Updated Installation Steps.txt file
+	- Updated Update Instructions.txt file
+	- Fixed, missing menus in user profile page
+	- Added Validation On Renew Account Page
+	- Fixed - Error wil be thrown when username not found on same page on renewaccount.php, previously it shows on another and looks like buggy.
+	- Revamped Renew Account Page
+	- Fixed login page error message for password, reduced from 8 to 6 characters.
+	- Fixed Session warning on paypal payment page
+	- Improved Paypal Payment Gateway
+
+	**New Features**
+	- Now able to delete user from many pages instead of only one page.
+	- Now Admin Able To Update All Feilds in His Profile Page, Previosly It was disabled Bcoz Of Security Reasons. (Now We enable It On Users Demand)
+	- Added List Of Countries During Signup, Instead Of Custom Input
+	- Added Option For custom footer, Now set your own footer on all pages, Like "Made With Love :)" or with your company name.
+	- Added Option For Custom Header, Now Set Your Own Header On All Pages, act As Company Name Only for Top Left Right Corner :)
+	- Added Ability To Show Status if website is under maintenance or live in admin panel :)
+	- New Header 
+	- New Footer
+	- Now During Forgot Password request, Instead Of Sending Old Password On E-Mail, Now New AlphaNumeric Password generated randomly, Will Be Sent.
+	- Custom E-Mail Text
+	- Added ability to see earnings levelwise in downline page of User. (Credit Goes To purchaser - Bradesko :D )
+	- Added ability to add signup Benefits and referral creditions during renewal his account, thats optional for admin. (Credit Goes To purchaser - Bradesko :D )
+	- Fresh New Login Page, Now More Faster And Efficient
+	- New Way to get login, and show messages during login :)
+	- New Signup Page, New Look and Feel
+	- Now Signup is more faster and efficient
+	- New Forgot Password Page, New Design, New Look, New Feel And Now faster execution
+	- Revamped And New Renew Account Page, new feel, faster execution
+	- Faster Execution Of Contact Page
+	- Revamped User Dashboard
+	- Revamped User's Profile Page
+	- Revamped Renew Account Page
+	- Admin will receive a mail when new member signup via paypal
+	- Admin will receive a mail new COD order 
+
+
+	
+	**File(s) Change/Update/Additions/**
+	-Several New Files are Added, Please Upload Whole Package Again To Update Folders And Files
+	-Several Files are Updated, Please Upload Whole Package Again To Update Folders And Files
+
+
+====================================
+Version 2.4.5.0 (#Beta) | 21 May 2015
+
+	**Bug Fixes**
+	- Some Known Bugs Fixed
+	- Some Performance Updates
+	- Username Login/Signup Bug Fixed for 6 or 8 characters in username, Now Fixed To 6 Characters.
+	- 
+
+	**New Features**
+	- Added ability to allow affiliate url  to work on index page now and on signup page too. (See Affiliate_Link_On_Index_Page.txt file for more info)
+	- Updated downline page's new design upto 6 levels
+	
+	**Files Updated**
+
+	1. User/signup.php
+	2. User/loginproc.php
+	3. User/signupck.php
+	4. User/invoice.php
+	5. User/downline.php
+	
+====================================
+Version 2.4.4.0 | 30 April 2015
+
+	**Bug Fixes**
+	- Added Option To See Expiry Date On Invoice Page Of Member
+	- Fixed Bug showing blank value in referral code. Added Ability as session instead of cookie.
+
+	**New Features**
+	- Oh Fresh! :) New updated downline page for users. Now User can see level wise referrals (Maximum Level 4)
+	- Now Member can renew his account with any package, we mean that he can now change his package during renewing his account.
+	- Expiry date of the member's account will be updated as per new package terms.
+
+	**Files Updated**
+
+	1. User/signup.php
+	2. User/updatesql.php
+	3. User/renewgatewayck.php
+	4. User/renewgateway.php
+	5. User/invoice.php
+	6. User/downline.php
+	7. User/signupck.php
+	8. User/Admin/renewpaymentscod.php
+	9. User/Admin/updateexpiry.php
+	10. User/Admin/gensettings.php
+	11. User/Admin/dashboard.php
+
+====================================
+Version 2.2.3.2 | 4th February 2015
+
+	**Bug Fixes**
+	-Updated Admin Dashboard - Now Admin Will see for only active user's counters and earnings on dashboard page, this is now actuall earnings and users.
+	-Updated Wrong Title In Forgot Password Page.
+
+	**New Features**
+	-Now Affiliate links will be valid for 30 days. Yes, on demand we did it. Now affilite Id will work even if user visits across multiple pages. (User must have cookies enabled)
+
+	**Files Updated**
+	1. User/admin/dashboard.php
+	2. User/signup.php
+	3. User/forpassword.php
+
+====================================
+Version 2.2.2.0 | 26 January 2015
+
+	**Database Structure**
+	-Database structure has been updated and optimized,please update sql first, otherwise you will be flooded with the errors.	
+
+	**Bug Fixes**
+
+	-Password Bug(s) Fixed On User Profile Page
+	-Now User Can Update E-Mail In Profile Page - This E-Mail Will Act As PayPal E-Mail if Admin Allowed User To Get Paid Via Paypal 
+	-Updated Wrong Instructions On Profile Page
+	-Updated Wrong Placeholder Details On Profile Page
+	-Some Performance Improvements
+	-Updated Both Database files, for new installations. Previously It Was Creating Confusions In Users
+
+
+	**New Features**
+
+	-Now Owner Can Pay Money In Two Modes:
+	 1. PayPal
+	 2. Direct Bank (Mannual)
+	-Admin Can Enable/Disable Either PayPal Or Direct Bank Options According To Their Convenience
+	-Now Users Can Choose Whether They Want To Get Paid Via PayPal To Direct Bank Deposit
+	-Incase Of Paypal, User's Registerd Email Id Will Act As PayPal E-Mail
+	-Now Admin Can See User's PayPal Email Or Bank Account Details On Payment Requests Page Itself
+	
+	**Documents Update**
+
+	-Changelog.txt File Updated
+	-Update Instructions.txt File Updated, Which Was Creating Some Confusion In Users.
+
+	 Total File(s) Updated :
+
+	 1. User/profile.php 
+	 2. User/profileupdateuser.php
+	 3. User/admin/gensettings.php
+	 4. User/admin/updategensettings.php
+	 5. User/admin/payrequest.php
+	 6. User/updatesql.php
+
+====================================
+Version 2.1.0.0 | 2 January 2015
+
+	-Updated missing attibutes in sql
+	-Added Personal Invite Link In User Profile Page
+
+
+====================================
+Version 2.0.0.0 | 1 January 2015
+
+	**Datebase Structure**
+	-Database structure has been updated and optimized,please update sql first, otherwise you will be flooded with the errors.
+
+
+	**Updates/Changes/Bug Fix/Optimization/**
+
+	-Fixed Wrong Title(s) On Signup Page(s)
+	-Changed Footer Text On Login/Sigup Page(s)
+	-Fixed Wrong Order Value During Checkout
+	-Fixed Wrong Currency Code During COD Checkout
+	-Fixed Wrong Profile Image Shown On User's Page And Admin Page
+	-Fixed Subname Shown Below User's Name, Previously It Was "Art Director" For All Users Not Admin
+	-Optimized Speed Of Pages During Signup (Now Faster)
+	-Updated Log File
+	-Added Update Instructions File
+	-Updated Installation Steps File
+	-Added Readme.txt file in SQL Folder
+	-Added Old SQL file also for emergency use
+
+	**New Features**	
+	
+	-Send Invite Through URL. (Now users can bind their sponsor id in invite url)
+	 (Every User has its own affiliate URL)
+	-Now Admin can see Amount requested By User for payment on Payment Requests Page
+	-Maintenance Mode - Disable Login, Registration Or Both. (User will be redirected to maintenance page if enabled)
+	-Disable PayPal Payment Gateway
+	-Disable Cash On Delivery Payment Gateway
+	-Now Assign Different Payment Gateways For Each Package
+	-Example - "A" Package Can Have Only Paypal Gateway And "B" Package Can Have Only Cash On Delivery Gateway
+	-Now Users Will Able To Choose Available Payment Gateway(s) For Payment.
+	-Now Users Will See Gold Member or Silver Member Or with Your Package Name, Under Their Name(Just Below Profile Picture)
+	-Now Every Package Has Ability To Have Expiry Date (No of days could be define for expiry)
+	-Example - 99999 days For Lifetime or 30 days for 1 month, 60 days for 2 Months Or So On Can Be Added To Every Package, This will act as expiry date for user account.
+	-Now User will be checked if his account has expired or not during login, if expired he will not able to login and msg will be shown to renew his account
+	-Now Users Needs To Repurchase/Renew His Account, If Expires. A Dedicated Page Has Been Added Where Users Can Renew His Account By Entering His Registered Username, But He Cant Change His Package, Package Remains The Same (ONLY COD OPTION IS THERE TO RENEW ACCOUNT).
+	-Now Admin Can See Requests/Orders To Renew Account
+	-Once You Update Expiry Date, You will not able to see Renew Request in your account.
+	-Admin Now Can See Renew/Repurchase Account Request
+	-Users Can Renew Their Accounts
+	-Ability to Take Backup Of All Database Is Now Available. Click One Button To Backup Your Database In Zipped Format
+	-Backup Generator Link Can Only Be Access In Dashboard Page
+
+	**File(s) Change/Update/Additions/**
+	-Several New Files are Added, Please Upload Whole Package Again To Update Folders And Files
+	-Several Files are Updated, Please Upload Whole Package Again To Update Folders And Files
+
+=====================================
+Version 1.1.1.0
+
+	- Paypal Checkout Problem Fixed
+	- Cash On delivery Checkout Option Added - On demand By Users
+	- Fixed Error When Updating Package
+	- Database Structure Updated
+	- Admin Can See COD and Paypal Orders Seperately
+	- Scrolling Problem Fixed on Notificatin Page
+	- Database Optimized
+	- Faster Execution Of Pages
+	- Invoice Print Alignment Fixed
+	- Security Bug Fixed Whlie Checking Out With Paypal
+	- Fixed Irrelevent Data priting on Payment.php page
+	- Fixed Error While Updating the User Details
+	- 1 New file Added In Admin - User/admin/paymentscod.php
+	- User's Notification long messages problem Fixed
+	- Contact.php - send mail file updated, message was not being sent, Fixed
+	- 1 new File Added - User/sendmail.php
+	- Fixed error while posting notification
+	- Fixed error While deleting notification
+	- Fixed Some bugs submitted by Users
+	- Database Connectivity Issues resolved faced by some users
+
+Files Updated:
+-All files Updated
+
+======================================
+
+--------------------------------------
+
+=====================================
+Version 1.0.0.0
+
+	- Initial Release
+======================================
+

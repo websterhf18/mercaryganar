@@ -1,0 +1,18 @@
+//To allow affiliate URL on your website index page, copy and paste below code on the top of the index.html or any index page of your website and you must save it as .php extention:
+
+
+<?php
+
+if(!isset($_SESSION)){
+    session_start();
+}
+include_once("User/z_db.php");
+if(isset($_GET["aff"]))
+{
+$aff=mysqli_real_escape_string($con,$_GET["aff"]);
+$_SESSION['aff'] = $aff;
+}		
+?>
+
+
+//this will not work on wordpress files.

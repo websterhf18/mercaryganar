@@ -1,0 +1,6 @@
+username - adminadmin
+password - 123123123
+
+Note - To change the username you need to edit it in MYSQL using phpmyadmin and to change the password just login into admin account and change your password from profile.
+
+**Last Updated - 4th February**

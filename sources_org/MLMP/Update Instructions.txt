@@ -1,0 +1,22 @@
+If you are updating this script please follow these instructions, if you are doing fresh/new installation, please use file "installation steps.txt" :
+
+Updating Instructions:
+
+Step 1 - Upload whole /User folder (Or List Of File(s) given in changelog.txt file) into your server.
+Open this path in browser : www.yourwebsite.com/User/updatesql.php
+If you get "Done" - It means SQL updates are successfull.
+if error, then it may be because of server problem or your sql might b already updated.
+
+Step 2 - Delete updatesql.php file from server after execution(immediately, MUST)
+
+Step 3 - now update the changed files, list given in changelog.
+
+Done, enjoy new updates :)
+
+
+-----------------------------------
+Last Updated - 6 June 2015
+Second Last - 30 April 2015
+Third Last Updated - 26 Jan 2015
+Fourth Last Updated - 2 Jan 2015
+-----------------------------------
